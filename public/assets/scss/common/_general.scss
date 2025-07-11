@@ -363,32 +363,7 @@ hr {
   }
 }
 
-.ak-form-field {
-  display: block;
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 15px;
-  outline: none;
-  transition: all 0.3s ease;
-  border: 2px solid #999696;
-  background-color: transparent;
-  color: #fff;
-  &:focus {
-    border-color: $yellow;
-  }
-}
 
-label {
-  margin-bottom: 12px;
-}
-
-input,
-select:focus {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  outline: none;
-}
 
 .ak-right-full-width {
   width: calc(50vw - 12px);
