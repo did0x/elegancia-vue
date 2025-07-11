@@ -485,7 +485,7 @@ hr {
     }
   }
   .item-title {
-    color: $white;
+    color: colors.$white;
     @media screen and (max-width: 768px) {
       font-size: 32px;
     }
