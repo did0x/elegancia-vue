@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .gallery-hover {
   position: relative;
@@ -11,7 +11,7 @@
   .gallery-img-overlay {
     position: absolute;
     top: 0;
-    background: $about_bg;
+    background: colors.$about_bg;
     padding: 36px;
     width: 80%;
     height: 88%;

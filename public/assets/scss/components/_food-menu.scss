@@ -1,5 +1,5 @@
 
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-menu-list {
     display: flex;
@@ -50,7 +50,7 @@
         }
         .food-menu-price {
             p {
-                color: $yellow;
+                color: colors.$yellow;
                 font-size: 18px;
             }
         }
@@ -60,10 +60,10 @@
         justify-content: space-between;
         margin-top: 7px;
         .food-menu-subsitle {
-            color: $white;
+            color: colors.$white;
         }
         .food-menu-price-subsitle {
-            color: $white;
+            color: colors.$white;
         }
     }
 }

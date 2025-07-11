@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-munu_toggles-top {
     display: inline-block;
@@ -11,7 +11,7 @@
     span:after {
         width: 100%;
         height: 2px;
-        background-color: $yellow;
+        background-color: colors.$yellow;
         display: block;
     }
     span {

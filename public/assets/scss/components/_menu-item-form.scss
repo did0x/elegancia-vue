@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-column {
   display: flex;
@@ -20,29 +20,29 @@
 }
 
 .menu-item-form-modal {
-  background: $about_bg;
+  background: colors.$about_bg;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 720px;
-  max-height: 80vh; /* Set a maximum height */
-  overflow-y: auto; /* Enable vertical scrolling */
-  position: relative; /* Needed for absolute positioning of close button */
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid colors.$border;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
 .modal-header h3 {
   margin: 0;
-  color: #333;
+  color: colors.$white;
 }
 
 .btn-close {
@@ -50,7 +50,7 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #555;
+  color: colors.$white;
 }
 
 .modal-body {
@@ -65,7 +65,7 @@
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #555;
+  color: colors.$white;
 }
 
 .menu-item-form-modal .ak-form-input,
@@ -73,9 +73,9 @@
   height: 50px;
   width: 100%;
   padding: 0 15px;
-  background-color: #f8f8f8; /* Light background */
-  border: 1px solid #ddd; /* Light border */
-  color: #333; /* Dark text */
+  background-color: transparent; /* Changed */
+  border: 1px solid colors.$border;     /* Changed */
+  color: colors.$white;                 /* Changed */
   font-size: 1rem;
   box-sizing: border-box;
 }
@@ -83,8 +83,15 @@
 .menu-item-form-modal .ak-form-input:focus,
 .menu-item-form-modal .ak-form-select:focus {
   outline: none;
-  border-color: #FFD28D; /* Yellow from the booking system */
+  border-color: colors.$yellow;
 }
+
+/* Style for the select dropdown options */
+.menu-item-form-modal .ak-form-select option {
+  background-color: #f0f0f0;
+  color: colors.$black;
+}
+
 
 .ak-btn {
   padding: 10px 15px;
@@ -96,12 +103,12 @@
 }
 
 .ak-btn-primary {
-  background-color: #007bff;
-  color: white;
+  background-color: colors.$yellow;
+  color: colors.$black;
 }
 
 .ak-btn-primary:hover {
-  background-color: #0056b3;
+  background-color: darken(colors.$yellow, 10%);
 }
 
 .ak-btn-secondary {

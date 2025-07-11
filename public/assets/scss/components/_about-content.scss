@@ -1,9 +1,9 @@
 
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 @use '../common/general' as *;
 
 .ak-about-bg-color {
-    background: $about_bg;
+    background: colors.$about_bg;
 }
 
 .ak-about-hr {
@@ -39,9 +39,9 @@
         .about-text-section {
             .about-title {
                 font-size: 60px;
-                color: $white;
+                color: colors.$white;
                 span {
-                    color: $yellow;
+                    color: colors.$yellow;
                 }
             }
         }
@@ -219,7 +219,7 @@
         width: auto;
         .text-content {
             .main-title {
-                color: $white;
+                color: colors.$white;
                 margin-bottom: 20px;
                 font-size: 32px;
             }

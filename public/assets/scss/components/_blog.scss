@@ -1,5 +1,5 @@
 
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 @use '../common/general' as *;
 
 .blog-content {
@@ -27,7 +27,7 @@
             left: 0;
             bottom: -10px;
             opacity: 1;
-            background-color: $border;
+            background-color: colors.$border;
             transition: all 0.5s;
         }
         .blog-title:hover:after {
@@ -48,7 +48,7 @@
         gap: 30px;
         .blog-details-date {
             // height: 25px;
-            border: 1px solid $border;
+            border: 1px solid colors.$border;
         }
     }
 }
@@ -104,7 +104,7 @@
 
 .input-section {
     width: 100%;
-    border: 1px solid $border;
+    border: 1px solid colors.$border;
     border-right: none;
     padding: 15px;
     background: transparent;
@@ -112,11 +112,11 @@
 }
 
 .input-section:focus {
-    color: $white;
+    color: colors.$white;
 }
 
 .search-icon {
-    border: 1px solid $border;
+    border: 1px solid colors.$border;
     padding: 15px;
     border-left: none;
     text-align: center;
@@ -155,7 +155,7 @@
     .author-icon {
         margin-right: 15px;
         &:hover>svg>path {
-            fill: $yellow;
+            fill: colors.$yellow;
         }
     }
 }

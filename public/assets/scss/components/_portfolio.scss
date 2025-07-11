@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 @use '../common/general' as *;
 
 .ak-slider-2 {
@@ -26,10 +26,10 @@
     height: 9px;
     width: 10px;
     background-color: transparent;
-    border: 1px solid $border;
+    border: 1px solid colors.$border;
     &.swiper-pagination-bullet-active {
-      border: 1px solid $yellow;
-      background-color: $yellow;
+      border: 1px solid colors.$yellow;
+      background-color: colors.$yellow;
     }
     border-radius: 50%;
     margin: 5px;
@@ -45,7 +45,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      background-color: $primary;
+      background-color: colors.$primary;
       opacity: 0;
       transition: all 0.3s ease;
     }
@@ -97,11 +97,11 @@
         height: 55px;
         width: 56px;
         border-radius: 50% 50% 50% 50%;
-        border-right: 1px solid $yellow;
+        border-right: 1px solid colors.$yellow;
         transition: all 0.3s ease-in-out;
       }
       &:hover > .btn-cricle {
-        border: 1px solid $yellow;
+        border: 1px solid colors.$yellow;
         border-radius: 100%;
       }
       &:hover > .btn-arrow {
@@ -124,13 +124,13 @@
         height: 55px;
         width: 56px;
         border-radius: 50% 50% 50% 50%;
-        border-right: 1px solid $yellow;
+        border-right: 1px solid colors.$yellow;
         transition: all 0.3s ease-in-out;
         transform: rotate(180deg);
       }
       &:hover > .btn-cricle {
         border-radius: 100%;
-        border: 1px solid $yellow;
+        border: 1px solid colors.$yellow;
       }
       &:hover > .btn-arrow {
         transform: translateX(0px);
@@ -167,12 +167,12 @@
     .card-text {
       padding: 45px 50px 45px 30px;
       .card-title {
-        color: $yellow;
+        color: colors.$yellow;
       }
       .card-subtitle {
-        color: $white;
+        color: colors.$white;
         &:hover {
-          color: $yellow;
+          color: colors.$yellow;
         }
       }
     }
@@ -204,10 +204,10 @@
       margin-bottom: 12px;
       padding-bottom: 10px;
       text-transform: uppercase;
-      border-bottom: 1px solid $border;
+      border-bottom: 1px solid colors.$border;
       word-spacing: 10px;
       span {
-        color: $white;
+        color: colors.$white;
         text-transform: capitalize;
         font-family: Prompt;
       }
@@ -223,7 +223,7 @@
   align-items: center;
   .portfolio-details-text {
     padding-right: 30px;
-    border-right: 1px solid $border;
+    border-right: 1px solid colors.$border;
   }
   .portfolio-details-icon {
     padding-left: 40px;
@@ -234,7 +234,7 @@
       margin-top: 3px;
     }
     a:hover > svg > path {
-      fill: $yellow;
+      fill: colors.$yellow;
     }
   }
 }

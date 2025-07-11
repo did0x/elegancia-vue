@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-booking-system {
   overflow: hidden;
@@ -22,14 +22,14 @@
     width: 100%;
     padding: 0 15px;
     background-color: transparent;
-    border: 1px solid $border;
-    color: $white;
+    border: 1px solid colors.$border;
+    color: colors.$white;
     font-size: 1rem;
     box-sizing: border-box;
 
     &:focus {
       outline: none;
-      border-color: $yellow;
+      border-color: colors.$yellow;
     }
   }
 
@@ -51,7 +51,7 @@
       cursor: pointer;
 
       option {
-        color: $black;
+        color: colors.$black;
         background-color: #f0f0f0;
       }
     }
@@ -137,7 +137,7 @@
     }
   }
   .select {
-    border: 1px solid $border;
+    border: 1px solid colors.$border;
     margin-bottom: 25px;
     cursor: pointer;
     position: relative;
@@ -156,10 +156,10 @@
     cursor: pointer;
     border: none;
     padding: 10px;
-    color: $white;
+    color: colors.$white;
     background-color: transparent;
     option {
-      color: $black;
+      color: colors.$black;
     }
   }
   .ak-form-time-date {
@@ -171,8 +171,8 @@
       display: flex;
       justify-content: space-between;
       .time-input {
-        border: 1px solid $border;
-        color: $white;
+        border: 1px solid colors.$border;
+        color: colors.$white;
         width: 100%;
         position: absolute;
         z-index: 4;
@@ -189,7 +189,7 @@
       }
     }
     input[type="time"]::-webkit-calendar-picker-indicator {
-      background-color: $yellow;
+      background-color: colors.$yellow;
       cursor: pointer;
       opacity: 0;
     }
@@ -199,8 +199,8 @@
       display: flex;
       justify-content: space-between;
       .date-input {
-        border: 1px solid $border;
-        color: $white;
+        border: 1px solid colors.$border;
+        color: colors.$white;
         width: 100%;
         z-index: 4;
         background-color: transparent;
@@ -216,7 +216,7 @@
       }
     }
     input[type="date"]::-webkit-calendar-picker-indicator {
-      background-color: $yellow;
+      background-color: colors.$yellow;
       cursor: pointer;
       opacity: 0;
     }

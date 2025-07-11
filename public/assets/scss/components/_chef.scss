@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 /*--------------------------------------------------------------
   18. Chef
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     .chef-style-1 {
         position: absolute;
-        background: $about_bg;
+        background: colors.$about_bg;
         bottom: -20px;
         padding: 36px 0px;
         width: 76%;
@@ -21,7 +21,7 @@
         margin: 0 12%;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
-        border-bottom: 1px solid $border;
+        border-bottom: 1px solid colors.$border;
     }
     .chef-info {
         display: flex;
@@ -39,7 +39,7 @@
         height: 150px;
         a {
             font-size: 20px;
-            color: $yellow;
+            color: colors.$yellow;
             text-transform: uppercase;
         }
     }

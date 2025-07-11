@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .header-top {
     position: relative;
@@ -16,13 +16,13 @@
             height: 100%;
             align-items: center;
             .logo {
-                color: $white;
+                color: colors.$white;
                 opacity: 1;
                 font-size: 18px;
                 text-transform: uppercase;
                 padding-right: 28px;
                 &:hover {
-                    color: $yellow;
+                    color: colors.$yellow;
                 }
             }
         }
@@ -66,7 +66,7 @@
             align-items: center;
             text-transform: uppercase;
             font-style: italic;
-            color: $white;
+            color: colors.$white;
             font-family: Baskervville;
             padding-left: 15%;
             padding-right: 5%;
@@ -88,7 +88,7 @@
             display: inline-block;
             &:hover {
                 transform: translateX(50px);
-                color: $yellow;
+                color: colors.$yellow;
             }
         }
         &.active {

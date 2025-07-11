@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .sidebar-hero-3 {
 
@@ -14,7 +14,7 @@
         justify-content: space-around;
         text-align: center;
         height: 100vh;
-        color: $white;
+        color: colors.$white;
         border-right: 1px solid rgba(255, 210, 141, 0.20);
 
         .section-link {
