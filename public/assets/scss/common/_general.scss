@@ -850,7 +850,7 @@ hr {
   transition: all 0.2s;
   text-transform: uppercase;
   &:hover {
-    background-color: $yellow;
+    background-color: colors.$yellow;
   }
 }
 
