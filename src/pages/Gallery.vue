@@ -53,15 +53,18 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import CommonHero from '../components/CommonHero.vue';
+import { useApi } from '../composables/useApi';
 
 const imageGalleryItems = ref([]);
 
+const { data, error, loading, fetchData } = useApi();
+
 onMounted(async () => {
-  try {
-    const response = await fetch('http://localhost:3001/imageGallery');
-    imageGalleryItems.value = await response.json();
-  } catch (error) {
-    console.error('Error fetching image gallery items:', error);
+  await fetchData('imageGallery');
+  if (data.value) {
+    imageGalleryItems.value = data.value;
+  } else if (error.value) {
+    console.error('Error fetching image gallery items:', error.value);
   }
 });
 </script>

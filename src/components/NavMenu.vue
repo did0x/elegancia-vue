@@ -29,6 +29,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import MenuItem from './MenuItem.vue';
+import { useApi } from '../composables/useApi';
 
 const logo = "/assets/img/logo/logo.webp";
 const navigationItems = ref([]);
@@ -50,12 +51,14 @@ const navBarShow = () => {
   }
 };
 
+const { data, error, loading, fetchData } = useApi();
+
 onMounted(async () => {
-  try {
-    const response = await fetch('http://localhost:3001/navigationItems');
-    navigationItems.value = await response.json();
-  } catch (error) {
-    console.error('Error fetching navigation items:', error);
+  await fetchData('navigationItems');
+  if (data.value) {
+    navigationItems.value = data.value;
+  } else if (error.value) {
+    console.error('Error fetching navigation items:', error.value);
   }
 });
 </script>

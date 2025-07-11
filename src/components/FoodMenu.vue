@@ -49,6 +49,7 @@ import { ref, onMounted } from 'vue';
 import SectionTitle from './SectionTitle.vue';
 import FoodMenuItem from './FoodMenuItem.vue';
 import Button from './Button.vue';
+import { useApi } from '../composables/useApi';
 
 defineProps({
   styleTwo: Boolean,
@@ -56,14 +57,16 @@ defineProps({
 
 const foodMenu = ref([]);
 const foodItemImage = "/assets/img/itemShow/food-menu.webp";
+const errorMessage = ref(null);
+
+const { data, error, loading, fetchData } = useApi();
 
 onMounted(async () => {
-  try {
-    const response = await fetch('http://localhost:3001/foodMenus');
-    const data = await response.json();
-    foodMenu.value = data[0].foodMenu; // Assuming you want the first foodMenu array
-  } catch (error) {
-    console.error('Error fetching food menus:', error);
+  await fetchData('foodMenus');
+  if (data.value) {
+    foodMenu.value = data.value[0].foodMenu; // Assuming you want the first foodMenu array
+  } else if (error.value) {
+    errorMessage.value = 'Failed to load food menus.';
   }
 });
 </script>

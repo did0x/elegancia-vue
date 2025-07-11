@@ -104,6 +104,7 @@ import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import SectionTitle from './SectionTitle.vue';
+import { useApi } from '../composables/useApi';
 
 const portfolioList = ref([]);
 const swiperInstance = ref(null);
@@ -120,12 +121,14 @@ const slidePrev = () => {
   swiperInstance.value.slideNext();
 };
 
+const { data, error, loading, fetchData } = useApi();
+
 onMounted(async () => {
-  try {
-    const response = await fetch('http://localhost:3001/portfolioItems');
-    portfolioList.value = await response.json();
-  } catch (error) {
-    console.error('Error fetching portfolio list:', error);
+  await fetchData('portfolioItems');
+  if (data.value) {
+    portfolioList.value = data.value;
+  } else if (error.value) {
+    console.error('Error fetching portfolio list:', error.value);
   }
 });
 </script>

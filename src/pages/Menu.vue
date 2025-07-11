@@ -53,12 +53,13 @@
 </template>
 
 <script setup>
-import {ref, onMounted, computed} from 'vue';
+import {ref, onMounted, computed, watch} from 'vue';
 import CommonHero from '../components/CommonHero.vue';
 import FoodMenuItem from '../components/FoodMenuItem.vue';
 import SectionTitle from '../components/SectionTitle.vue';
 import MenuItemForm from '../components/MenuItemForm.vue';
 import {useGsap, imageZoomInOut} from '../composables/useGsap';
+import { useApi } from '../composables/useApi';
 
 const foodMenus = ref([]);
 const imageContainers = ref([]);
@@ -68,25 +69,26 @@ const editingItem = ref(null);
 
 const g = useGsap();
 
+const { data, error, loading, fetchData } = useApi();
+
 const menuCategories = computed(() => {
   return foodMenus.value.map(menu => menu.headingText.title);
 });
 
-const fetchFoodMenus = async () => {
-  try {
-    const response = await fetch('http://localhost:3001/foodMenus');
-    foodMenus.value = await response.json();
-
+const loadFoodMenus = async () => {
+  await fetchData('foodMenus');
+  if (data.value) {
+    foodMenus.value = data.value;
     foodMenus.value.forEach((item, index) => {
       g.add(() => imageZoomInOut(imageContainers.value[index], imageZoomIns.value[index]));
     });
-  } catch (error) {
-    console.error('Error fetching food menu list:', error);
+  } else if (error.value) {
+    console.error('Error fetching food menu list:', error.value);
   }
 };
 
 onMounted(() => {
-  fetchFoodMenus();
+  loadFoodMenus();
 });
 
 const addNewItem = () => {
@@ -114,8 +116,7 @@ const saveMenuItem = async (item) => {
     const itemIndex = categoryData.foodMenu.findIndex(foodItem => foodItem.id === item.id);
     if (itemIndex !== -1) {
       categoryData.foodMenu[itemIndex] = {...item};
-      // No direct API for nested updates in json-server, so we'll update the whole category
-      await fetch(`http://localhost:3001/foodMenus/${categoryData.id}`, {
+      await fetchData(`foodMenus/${categoryData.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -127,8 +128,7 @@ const saveMenuItem = async (item) => {
     // Add new item
     const newItem = {...item, id: Date.now()}; // Assign a unique ID
     categoryData.foodMenu.push(newItem);
-    // No direct API for nested updates in json-server, so we'll update the whole category
-    await fetch(`http://localhost:3001/foodMenus/${categoryData.id}`, {
+    await fetchData(`foodMenus/${categoryData.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ const saveMenuItem = async (item) => {
     });
   }
   showForm.value = false;
-  fetchFoodMenus(); // Re-fetch data to update the UI
+  loadFoodMenus(); // Re-fetch data to update the UI
 };
 
 const deleteMenuItem = async (itemId) => {
@@ -160,14 +160,14 @@ const deleteMenuItem = async (itemId) => {
     const categoryData = foodMenus.value.find(cat => cat.id === categoryIdToDeleteFrom);
     categoryData.foodMenu.splice(itemIndexToDelete, 1);
 
-    await fetch(`http://localhost:3001/foodMenus/${categoryIdToDeleteFrom}`, {
+    await fetchData(`foodMenus/${categoryIdToDeleteFrom}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(categoryData),
     });
-    fetchFoodMenus(); // Re-fetch data to update the UI
+    loadFoodMenus(); // Re-fetch data to update the UI
   } else {
     console.error("Item not found for deletion:", itemId);
   }

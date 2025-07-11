@@ -33,15 +33,18 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
+import { useApi } from '../composables/useApi';
 
 const sideNavigationItems = ref([]);
 
+const { data, error, loading, fetchData } = useApi();
+
 onMounted(async () => {
-  try {
-    const response = await fetch('http://localhost:3001/sideNavigationItems');
-    sideNavigationItems.value = await response.json();
-  } catch (error) {
-    console.error('Error fetching side navigation items:', error);
+  await fetchData('sideNavigationItems');
+  if (data.value) {
+    sideNavigationItems.value = data.value;
+  } else if (error.value) {
+    console.error('Error fetching side navigation items:', error.value);
   }
 });
 

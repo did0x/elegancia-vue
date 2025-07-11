@@ -66,6 +66,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import Button from './Button.vue';
+import { useApi } from '../composables/useApi';
 
 const props = defineProps({
   styleTwo: Boolean,
@@ -79,36 +80,33 @@ const inputs = ref({
   specialRequest: '',
 });
 
+const { data, error, loading, fetchData } = useApi();
+
 const handleSubmit = async () => {
   const newBooking = {
     ...inputs.value,
     createdDate: new Date().toISOString(),
   };
 
-  try {
-    const response = await fetch('http://localhost:3001/bookings', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newBooking),
-    });
+  await fetchData('bookings', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newBooking),
+  });
 
-    if (response.ok) {
-      alert('Reservation created successfully!');
-      // Reset form
-      inputs.value = {
-        name: '',
-        email: '',
-        people: '1',
-        bookingDate: '2024-01-01T19:00',
-        specialRequest: '',
-      };
-    } else {
-      alert('Failed to create reservation.');
-    }
-  } catch (error) {
-    console.error('Error creating reservation:', error);
+  if (data.value) {
+    alert('Reservation created successfully!');
+    // Reset form
+    inputs.value = {
+      name: '',
+      email: '',
+      people: '1',
+      bookingDate: '2024-01-01T19:00',
+      specialRequest: '',
+    };
+  } else if (error.value) {
     alert('An error occurred while creating the reservation.');
   }
 };
