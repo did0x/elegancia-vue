@@ -57,7 +57,7 @@ import { useApi } from '../composables/useApi';
 
 const imageGalleryItems = ref([]);
 
-const { data, error, loading, fetchData } = useApi();
+const { data, error, fetchData } = useApi();
 
 onMounted(async () => {
   await fetchData('imageGallery');

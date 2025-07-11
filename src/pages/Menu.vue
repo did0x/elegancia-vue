@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import {ref, onMounted, computed, watch} from 'vue';
+import {ref, onMounted, computed} from 'vue';
 import CommonHero from '../components/CommonHero.vue';
 import FoodMenuItem from '../components/FoodMenuItem.vue';
 import SectionTitle from '../components/SectionTitle.vue';
@@ -69,7 +69,7 @@ const editingItem = ref(null);
 
 const g = useGsap();
 
-const { data, error, loading, fetchData } = useApi();
+const { data, error, fetchData } = useApi();
 
 const menuCategories = computed(() => {
   return foodMenus.value.map(menu => menu.headingText.title);

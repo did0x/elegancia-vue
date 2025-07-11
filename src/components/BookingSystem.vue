@@ -64,7 +64,7 @@ const peopleOptions = [
   { value: '5', text: '5 People' },
 ];
 
-const { data, error, loading, fetchData } = useApi();
+const { data, error, fetchData } = useApi();
 
 const handleSubmit = async () => {
   const newBooking = {

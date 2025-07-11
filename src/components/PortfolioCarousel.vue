@@ -116,7 +116,7 @@ const slidePrev = () => {
   swiperInstance.value.slideNext();
 };
 
-const { data, error, loading, fetchData } = useApi();
+const { data, error, fetchData } = useApi();
 
 onMounted(async () => {
   await fetchData('portfolioItems');

@@ -59,7 +59,7 @@ const foodMenu = ref([]);
 const foodItemImage = "/assets/img/itemShow/food-menu.webp";
 const errorMessage = ref(null);
 
-const { data, error, loading, fetchData } = useApi();
+const { data, error, fetchData } = useApi();
 
 onMounted(async () => {
   await fetchData('foodMenus');
