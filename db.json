@@ -1,0 +1,672 @@
+{
+  "foodMenus": [
+    {
+      "foodMenu": [
+        {
+          "id": 1,
+          "title": "Spaghetti alla Carbonara",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 2,
+          "title": "Caviar-topped Oysters",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 3,
+          "title": "Croquetas de jamón",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 4,
+          "title": "Foie Gras and Fig Terrine",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 5,
+          "title": "paella valenciana",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 6,
+          "title": "Truffle-infused Filet Mignon",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 7,
+          "title": "Peri Peri Prawns",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 8,
+          "title": "Butter Poached Lobster",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 9,
+          "title": "Golden Saffron Risotto",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 10,
+          "title": "Herb-Crusted Rack of Lamb",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        }
+      ],
+      "bgImageShow": "/assets/img/bg/menu-bg.png",
+      "headingText": {
+        "title": "Appetizers",
+        "subTitle": "Appetizers",
+        "alignment": "center"
+      }
+    },
+    {
+      "foodMenu": [
+        {
+          "id": 11,
+          "title": "Vienetta (Netherlands)",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 12,
+          "title": "Apple Strudel (Austria)",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 13,
+          "title": "Tiramisu",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 14,
+          "title": "Foie Gras and Fig Terrine",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 15,
+          "title": "Apple Strudel",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 16,
+          "title": "Truffle-infused Filet Mignon",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 17,
+          "title": "Crème Brûlée",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 18,
+          "title": "Butter Poached Lobster",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 19,
+          "title": "Black Forest Cake",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 20,
+          "title": "Pastéis de Nata (Portugal)",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-2.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        }
+      ],
+      "bgImageShow": "/assets/img/bg/bar-menu-bg.png",
+      "headingText": {
+        "title": "Bar Items",
+        "subTitle": "Juice Bar",
+        "alignment": "center"
+      }
+    },
+    {
+      "foodMenu": [
+        {
+          "id": 21,
+          "title": "Guinness Irelandian",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 22,
+          "title": "Scotch Whisky Scotland",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 23,
+          "title": "Aperol Spritz Italian",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 24,
+          "title": "Jägermeister Germany",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 25,
+          "title": "Pilsner Urquell Czech",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 26,
+          "title": "Port Wine (Portugal)",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 27,
+          "title": "Pavlova (New Zealand)",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 28,
+          "title": "Vodka Russia / Poland",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 29,
+          "title": "Vodka Russia / Poland",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        },
+        {
+          "id": 30,
+          "title": "Aperol Spritz Italian",
+          "price": "$49",
+          "image": "/assets/img/itemShow/item-show-3.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "priceSubTitle": "Extra free juice"
+        }
+      ],
+      "bgImageShow": "/assets/img/bg/desserts-menu-bg.png",
+      "headingText": {
+        "title": "Desserts",
+        "subTitle": "Sweet dreams",
+        "alignment": "center"
+      }
+    }
+  ],
+  "portfolioItems": [
+    {
+      "id": 1,
+      "image": "/assets/img/portfolio/portfolio-1.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/portfolio/portfolio-2.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/portfolio/portfolio-3.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/portfolio/portfolio-4.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/portfolio/portfolio-5.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/portfolio/portfolio-6.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "image": "/assets/img/portfolio/portfolio-7.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "image": "/assets/img/portfolio/portfolio-8.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "image": "/assets/img/portfolio/portfolio-9.jpg",
+      "title": "Spaghetti Carbonara",
+      "subTitle": "Desserts",
+      "portfolioDetails": {
+        "category": "Desserts",
+        "date": "5 July 2023",
+        "description": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that. Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories.",
+        "shortDescription": "Lorem to our restaurant, where culinary artistry meets exceptional dining experiences. At, we strive to create a gastronomic haven that tantalizes your taste buds and leaves you with unforgettable memories. ",
+        "tags": [
+          "Tasty",
+          "Sweet"
+        ],
+        "portfolioCarousel": [
+          {
+            "img": "/assets/img/portfolio/portfolio.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          },
+          {
+            "img": "/assets/img/portfolio/portfolio-details.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "imageGallery": [
+    {
+      "src": "/assets/img/gallery/gallery-1.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-1.jpg",
+      "caption": "Image 1",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    },
+    {
+      "src": "/assets/img/gallery/gallery-2.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-2.jpg",
+      "caption": "Image 2",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    },
+    {
+      "src": "/assets/img/gallery/gallery-3.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-3.jpg",
+      "caption": "Image 4",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    },
+    {
+      "src": "/assets/img/gallery/gallery-4.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-4.jpg",
+      "caption": "Image 4",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    },
+    {
+      "src": "/assets/img/gallery/gallery-5.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-5.jpg",
+      "caption": "Image 4",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    },
+    {
+      "src": "/assets/img/gallery/gallery-6.jpg",
+      "thumbnail": "/assets/img/gallery/gallery-6.jpg",
+      "caption": "Image 4",
+      "title": "Paella Valencene",
+      "description": "Italian"
+    }
+  ],
+  "navigationItems": [
+    {
+      "title": "Home",
+      "link": "/",
+      "key": "home"
+    },
+    {
+      "title": "About",
+      "link": "/about",
+      "key": "about"
+    },
+    {
+      "title": "Menu",
+      "link": "/menu",
+      "key": "menu"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact",
+      "key": "contact"
+    }
+  ],
+  "sideNavigationItems": [
+    {
+      "title": "Home",
+      "link": "/",
+      "image": "/full-wm-about.jpg"
+    },
+    {
+      "title": "About",
+      "link": "/about",
+      "image": "/full-wm-about.jpg"
+    },
+    {
+      "title": "Menu",
+      "link": "/menu",
+      "image": "/full-wm-menu.jpg"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact",
+      "image": "/full-wm-contact.jpg"
+    }
+  ],
+  "bookings": [
+    {
+      "name": "Lala",
+      "email": "apravida@hacktiv8.com",
+      "people": "3",
+      "bookingDate": "2024-01-06T20:26",
+      "specialRequest": "no",
+      "createdDate": "2023-12-25T13:26:23.363Z",
+      "id": 1
+    },
+    {
+      "id": "6353",
+      "name": "Ridho",
+      "email": "ridho@hacktiv8.com",
+      "people": "1",
+      "bookingDate": "2025-07-10T19:00",
+      "specialRequest": "None",
+      "createdDate": "2025-07-10T09:08:02.284Z"
+    },
+    {
+      "id": "51a7",
+      "name": "Hellow",
+      "email": "hello@hacktiv8.com",
+      "people": "4",
+      "bookingDate": "2025-07-26T19:00",
+      "specialRequest": "Large beer",
+      "createdDate": "2025-07-10T09:09:44.033Z"
+    },
+    {
+      "id": "526a",
+      "name": "Dante",
+      "email": "dante@hacktiv8.com",
+      "people": "3",
+      "bookingDate": "2025-07-10T23:20",
+      "specialRequest": "Hot tea",
+      "createdDate": "2025-07-10T10:19:33.726Z"
+    }
+  ]
+}

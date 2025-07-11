@@ -1,0 +1,114 @@
+@use '../default/color-variable' as *;
+
+.ak-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu-item-form-modal {
+  background: $about_bg;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 720px;
+  max-height: 80vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* Needed for absolute positioning of close button */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.ak-form-field {
+  margin-bottom: 20px;
+}
+
+.ak-form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.menu-item-form-modal .ak-form-input,
+.menu-item-form-modal .ak-form-select {
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  background-color: #f8f8f8; /* Light background */
+  border: 1px solid #ddd; /* Light border */
+  color: #333; /* Dark text */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.menu-item-form-modal .ak-form-input:focus,
+.menu-item-form-modal .ak-form-select:focus {
+  outline: none;
+  border-color: #FFD28D; /* Yellow from the booking system */
+}
+
+.ak-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.ak-btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.ak-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.ak-btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.ak-btn-secondary:hover {
+  background-color: #5a6268;
+}
