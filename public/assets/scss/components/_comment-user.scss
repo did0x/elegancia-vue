@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .comment-list {
     list-style: none;
@@ -11,16 +11,16 @@
             padding: 5px 0px;
         }
         .url {
-            color: $white;
+            color: colors.$white;
             &:hover {
-                color: $yellow;
+                color: colors.$yellow;
             }
         }
         .reply {
-            color: $yellow;
+            color: colors.$yellow;
         }
         .reply>:hover {
-            color: $white;
+            color: colors.$white;
         }
         .comment-author {
             .avatar {

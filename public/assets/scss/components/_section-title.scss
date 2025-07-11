@@ -1,11 +1,11 @@
 
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-section-heading.ak-style-1 {
     overflow: hidden;
     .ak-section-subtitle {
         font-family: Baskervville;
-        color: $primary;
+        color: colors.$primary;
         font-size: 18px;
         font-style: italic;
         font-weight: 400;
@@ -17,14 +17,14 @@
         font-size: 60px;
         font-weight: 400;
         margin-bottom: 0;
-        color: $yellow;
+        color: colors.$yellow;
         &.page-title-anim {
             text-transform: capitalize;
         }
     }
     &.ak-color-1 {
         .ak-section-subtitle {
-            color: $white;
+            color: colors.$white;
         }
     }
     &.ak-type-1 {
@@ -44,7 +44,7 @@
         .mini-title-border {
             width: 50px;
             height: 1px;
-            background-color: $primary;
+            background-color: colors.$primary;
         }
         .mini-text {
             font-family: Prompt;
@@ -53,7 +53,7 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
-            color: $primary;
+            color: colors.$primary;
         }
     }
     .section-title {
@@ -62,10 +62,10 @@
         font-weight: 400;
         line-height: 115%;
         // text-transform: capitalize;
-        color: $primary;
+        color: colors.$primary;
         margin-bottom: 25px;
         span {
-            color: $white;
+            color: colors.$white;
         }
     }
     .section-desp {

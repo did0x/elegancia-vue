@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .contact-content {
   width: 85vw;
@@ -21,7 +21,7 @@
     .from-input {
       input {
         background-color: transparent;
-        border: 1px solid $border;
+        border: 1px solid colors.$border;
         padding: 10px;
         margin-bottom: 20px;
       }
@@ -30,17 +30,17 @@
       box-shadow: none;
       outline: none;
       background-color: transparent;
-      border: 1px solid $border;
+      border: 1px solid colors.$border;
       padding: 10px;
       margin-bottom: 10px;
       &:focus {
-        border: 1px solid $border;
+        border: 1px solid colors.$border;
       }
     }
     .contact-btn {
       border: none;
-      background-color: $white;
-      color: $black;
+      background-color: colors.$white;
+      color: colors.$black;
       padding: 18px 45px;
       margin-top: 50px;
     }

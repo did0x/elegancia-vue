@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 @use '../common/general' as *;
 
 .ak-loaction-hr {
@@ -15,7 +15,7 @@
         .card-title {
             margin-top: 17px;
             text-transform: uppercase;
-            color: $primary;
+            color: colors.$primary;
         }
 
         .card-subtext {
@@ -23,25 +23,25 @@
         }
 
         &.style-1 {
-            border-right: 1px solid $border;
+            border-right: 1px solid colors.$border;
         }
 
         .card-icon {
             transition: all 1s ease-in-out;
             height: 41px;
             width: 40px;
-            border: 1px solid $white;
+            border: 1px solid colors.$white;
             border-radius: 50%;
             display: inline-block;
         }
 
         &:hover .card-icon {
             border: none;
-            background-color: $yellow;
+            background-color: colors.$yellow;
 
             svg {
                 path {
-                    fill: $black;
+                    fill: colors.$black;
                 }
             }
         }

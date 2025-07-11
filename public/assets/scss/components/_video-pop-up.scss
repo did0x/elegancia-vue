@@ -1,3 +1,5 @@
+@use '../default/color-variable' as colors;
+
 .video-section {
   position: relative;
   height: 60vh;
@@ -41,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ffd28d;
+  border: 1px solid colors.$yellow;
 }
 
 .ak-player-btn:before,

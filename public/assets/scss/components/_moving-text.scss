@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-moving-section-wrap {
     overflow: hidden;
@@ -20,7 +20,7 @@
     animation: slide-left 20s linear infinite;
 
     span {
-        color: $white;
+        color: colors.$white;
     }
 }
 

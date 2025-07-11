@@ -1,4 +1,4 @@
-@use '../default/color-variable' as *;
+@use '../default/color-variable' as colors;
 
 .ak-column {
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .menu-item-form-modal {
-  background: $about_bg;
+  background: colors.$about_bg;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@
 .menu-item-form-modal .ak-form-input:focus,
 .menu-item-form-modal .ak-form-select:focus {
   outline: none;
-  border-color: #FFD28D; /* Yellow from the booking system */
+  border-color: colors.$yellow; /* Yellow from the booking system */
 }
 
 .ak-btn {
