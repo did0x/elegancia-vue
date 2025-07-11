@@ -680,7 +680,7 @@ hr {
     left: 0;
     top: 0;
     opacity: 0;
-    background-color: rgba($black, 0.4);
+    background-color: rgba(colors.$black, 0.4);
     transition: all 0.4s ease;
   }
   &:hover {
