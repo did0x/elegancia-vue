@@ -19,17 +19,11 @@
         >
           <swiper-slide v-for="(item, index) in portfolioList" :key="index">
             <div class="col">
-              <div class="ak-card ak-style-1">
-                <div class="ak-card-img">
-                  <img :src="item.image" alt="..."/>
-                </div>
-                <div class="card-info">
-                  <div class="card-text style-1">
-                    <h5 class="card-title">{{ item.title }}</h5>
-                    <div class="card-subtitle">{{ item.subTitle }}</div>
-                  </div>
-                </div>
-              </div>
+              <BaseCard
+                :image="item.image"
+                :title="item.title"
+                :subTitle="item.subTitle"
+              />
             </div>
           </swiper-slide>
         </swiper>
@@ -104,6 +98,7 @@ import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import SectionTitle from './SectionTitle.vue';
+import BaseCard from './BaseCard.vue';
 import { useApi } from '../composables/useApi';
 
 const portfolioList = ref([]);
