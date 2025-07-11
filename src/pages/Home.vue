@@ -8,7 +8,7 @@
     <FoodMenu :styleTwo="false" />
     <BestItem />
     <Testimonial />
-    <BookingSystemV2 videoId="UsD1MhKBmD4" />
+    <ReservationSection videoId="your-video-id" />
   </div>
 </template>
 
@@ -21,5 +21,5 @@ import PortfolioCarousel from '../components/PortfolioCarousel.vue';
 import FoodMenu from '../components/FoodMenu.vue';
 import BestItem from '../components/BestItem.vue';
 import Testimonial from '../components/Testimonial.vue';
-import BookingSystemV2 from '../components/BookingSystemV2.vue';
+import ReservationSection from '../components/ReservationSection.vue';
 </script>
