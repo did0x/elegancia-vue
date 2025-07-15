@@ -3,84 +3,58 @@
     {
       "foodMenu": [
         {
-          "id": 1,
-          "title": "Spaghetti alla Carbonara",
-          "price": "$49",
-          "image": "/assets/img/itemShow/item-show.png",
-          "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
-        },
-        {
-          "id": 2,
-          "title": "Caviar-topped Oysters",
-          "price": "$49",
-          "image": "/assets/img/itemShow/item-show.png",
-          "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
-        },
-        {
           "id": 3,
+          "category": "Appetizers",
           "title": "Croquetas de jamón",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 4,
+          "category": "Appetizers",
           "title": "Foie Gras and Fig Terrine",
-          "price": "$49",
+          "price": "$490",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 5,
+          "category": "Appetizers",
           "title": "paella valenciana",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 6,
+          "category": "Appetizers",
           "title": "Truffle-infused Filet Mignon",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 7,
+          "category": "Appetizers",
           "title": "Peri Peri Prawns",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 8,
+          "category": "Appetizers",
           "title": "Butter Poached Lobster",
-          "price": "$49",
+          "price": "$100",
           "image": "/assets/img/itemShow/item-show.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
-        },
-        {
-          "id": 9,
-          "title": "Golden Saffron Risotto",
-          "price": "$49",
-          "image": "/assets/img/itemShow/item-show.png",
-          "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
-        },
-        {
-          "id": 10,
-          "title": "Herb-Crusted Rack of Lamb",
-          "price": "$49",
-          "image": "/assets/img/itemShow/item-show.png",
-          "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         }
       ],
       "bgImageShow": "/assets/img/bg/menu-bg.png",
@@ -88,89 +62,109 @@
         "title": "Appetizers",
         "subTitle": "Appetizers",
         "alignment": "center"
-      }
+      },
+      "id": "abb5"
     },
     {
       "foodMenu": [
         {
           "id": 11,
+          "category": "Bar Items",
           "title": "Vienetta (Netherlands)",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 12,
+          "category": "Bar Items",
           "title": "Apple Strudel (Austria)",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 13,
+          "category": "Bar Items",
           "title": "Tiramisu",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 14,
+          "category": "Bar Items",
           "title": "Foie Gras and Fig Terrine",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 15,
+          "category": "Bar Items",
           "title": "Apple Strudel",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 16,
+          "category": "Bar Items",
           "title": "Truffle-infused Filet Mignon",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 17,
+          "category": "Bar Items",
           "title": "Crème Brûlée",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 18,
+          "category": "Bar Items",
           "title": "Butter Poached Lobster",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 19,
+          "category": "Bar Items",
           "title": "Black Forest Cake",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 20,
+          "category": "Bar Items",
           "title": "Pastéis de Nata (Portugal)",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-2.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
+        },
+        {
+          "id": 1752568458017,
+          "category": "Bar Items",
+          "title": "Beer Garden",
+          "price": "$250",
+          "image": "",
+          "subTitle": "Bir fresh",
+          "offer": "Free flow"
         }
       ],
       "bgImageShow": "/assets/img/bg/bar-menu-bg.png",
@@ -178,89 +172,109 @@
         "title": "Bar Items",
         "subTitle": "Juice Bar",
         "alignment": "center"
-      }
+      },
+      "id": "724a"
     },
     {
       "foodMenu": [
         {
           "id": 21,
+          "category": "Desserts",
           "title": "Guinness Irelandian",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 22,
+          "category": "Desserts",
           "title": "Scotch Whisky Scotland",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 23,
+          "category": "Desserts",
           "title": "Aperol Spritz Italian",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 24,
+          "category": "Desserts",
           "title": "Jägermeister Germany",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 25,
+          "category": "Desserts",
           "title": "Pilsner Urquell Czech",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 26,
+          "category": "Desserts",
           "title": "Port Wine (Portugal)",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 27,
+          "category": "Desserts",
           "title": "Pavlova (New Zealand)",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 28,
+          "category": "Desserts",
           "title": "Vodka Russia / Poland",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 29,
+          "category": "Desserts",
           "title": "Vodka Russia / Poland",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
         },
         {
           "id": 30,
+          "category": "Desserts",
           "title": "Aperol Spritz Italian",
           "price": "$49",
           "image": "/assets/img/itemShow/item-show-3.png",
           "subTitle": "Lorem passionate chefs masterfully",
-          "priceSubTitle": "Extra free juice"
+          "offer": "Extra free juice"
+        },
+        {
+          "id": 9,
+          "category": "Desserts",
+          "title": "Golden Saffron Risotto",
+          "price": "$50",
+          "image": "/assets/img/itemShow/item-show.png",
+          "subTitle": "Lorem passionate chefs masterfully",
+          "offer": "Extra free juices"
         }
       ],
       "bgImageShow": "/assets/img/bg/desserts-menu-bg.png",
@@ -268,12 +282,13 @@
         "title": "Desserts",
         "subTitle": "Sweet dreams",
         "alignment": "center"
-      }
+      },
+      "id": "f570"
     }
   ],
   "portfolioItems": [
     {
-      "id": 1,
+      "id": "1",
       "image": "/assets/img/portfolio/portfolio-1.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -303,7 +318,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "/assets/img/portfolio/portfolio-2.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -333,7 +348,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "/assets/img/portfolio/portfolio-3.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -363,7 +378,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "/assets/img/portfolio/portfolio-4.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -393,7 +408,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "/assets/img/portfolio/portfolio-5.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -423,7 +438,7 @@
       }
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "/assets/img/portfolio/portfolio-6.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -453,7 +468,7 @@
       }
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "/assets/img/portfolio/portfolio-7.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -483,7 +498,7 @@
       }
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "/assets/img/portfolio/portfolio-8.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -513,7 +528,7 @@
       }
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "/assets/img/portfolio/portfolio-9.jpg",
       "title": "Spaghetti Carbonara",
       "subTitle": "Desserts",
@@ -549,86 +564,100 @@
       "thumbnail": "/assets/img/gallery/gallery-1.jpg",
       "caption": "Image 1",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "e3b5"
     },
     {
       "src": "/assets/img/gallery/gallery-2.jpg",
       "thumbnail": "/assets/img/gallery/gallery-2.jpg",
       "caption": "Image 2",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "694d"
     },
     {
       "src": "/assets/img/gallery/gallery-3.jpg",
       "thumbnail": "/assets/img/gallery/gallery-3.jpg",
       "caption": "Image 4",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "eaaf"
     },
     {
       "src": "/assets/img/gallery/gallery-4.jpg",
       "thumbnail": "/assets/img/gallery/gallery-4.jpg",
       "caption": "Image 4",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "9625"
     },
     {
       "src": "/assets/img/gallery/gallery-5.jpg",
       "thumbnail": "/assets/img/gallery/gallery-5.jpg",
       "caption": "Image 4",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "1628"
     },
     {
       "src": "/assets/img/gallery/gallery-6.jpg",
       "thumbnail": "/assets/img/gallery/gallery-6.jpg",
       "caption": "Image 4",
       "title": "Paella Valencene",
-      "description": "Italian"
+      "description": "Italian",
+      "id": "8b12"
     }
   ],
   "navigationItems": [
     {
       "title": "Home",
       "link": "/",
-      "key": "home"
+      "key": "home",
+      "id": "f189"
     },
     {
       "title": "About",
       "link": "/about",
-      "key": "about"
+      "key": "about",
+      "id": "d08a"
     },
     {
       "title": "Menu",
       "link": "/menu",
-      "key": "menu"
+      "key": "menu",
+      "id": "cf95"
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "key": "contact"
+      "key": "contact",
+      "id": "94ce"
     }
   ],
   "sideNavigationItems": [
     {
       "title": "Home",
       "link": "/",
-      "image": "/full-wm-about.jpg"
+      "image": "/full-wm-about.jpg",
+      "id": "1958"
     },
     {
       "title": "About",
       "link": "/about",
-      "image": "/full-wm-about.jpg"
+      "image": "/full-wm-about.jpg",
+      "id": "ee0e"
     },
     {
       "title": "Menu",
       "link": "/menu",
-      "image": "/full-wm-menu.jpg"
+      "image": "/full-wm-menu.jpg",
+      "id": "3771"
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "image": "/full-wm-contact.jpg"
+      "image": "/full-wm-contact.jpg",
+      "id": "f783"
     }
   ],
   "bookings": [
@@ -639,7 +668,7 @@
       "bookingDate": "2024-01-06T20:26",
       "specialRequest": "no",
       "createdDate": "2023-12-25T13:26:23.363Z",
-      "id": 1
+      "id": "1"
     },
     {
       "id": "6353",

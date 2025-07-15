@@ -19,7 +19,7 @@
           <p>{{ data.subTitle }}</p>
         </div>
         <div class="food-menu-price-subsitle">
-          <p>{{ data.priceSubTitle }}</p>
+          <p>{{ data.offer }}</p>
         </div>
       </div>
       <div class="menu-item-actions">
@@ -52,37 +52,3 @@ onMounted(() => {
   g.add(() => foodMenuHr(borderTwo.value));
 });
 </script>
-
-<style scoped>
-.menu-item-actions {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-.menu-item-edit-button, .menu-item-delete-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  color: white;
-}
-
-.menu-item-edit-button {
-  background-color: #007bff;
-}
-
-.menu-item-edit-button:hover {
-  background-color: #0056b3;
-}
-
-.menu-item-delete-button {
-  background-color: #dc3545;
-}
-
-.menu-item-delete-button:hover {
-  background-color: #c82333;
-}
-</style>
-

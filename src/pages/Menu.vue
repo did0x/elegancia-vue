@@ -102,19 +102,64 @@ const editMenuItem = (item) => {
 };
 
 const saveMenuItem = async (item) => {
-  const categoryIndex = foodMenus.value.findIndex(menu => menu.headingText.title === item.category);
+  const newCategoryName = item.category;
+  const newCategoryIndex = foodMenus.value.findIndex(menu => menu.headingText.title === newCategoryName);
 
-  if (categoryIndex === -1) {
-    console.error("Category not found:", item.category);
+  if (newCategoryIndex === -1) {
+    console.error("New category not found:", newCategoryName);
     return;
   }
 
-  const categoryData = foodMenus.value[categoryIndex];
-
   if (item.id) {
-    // Update existing item
-    const itemIndex = categoryData.foodMenu.findIndex(foodItem => foodItem.id === item.id);
-    if (itemIndex !== -1) {
+    let originalCategoryIndex = -1;
+    let itemIndex = -1;
+
+    // Find the original category and item index
+    for (let i = 0; i < foodMenus.value.length; i++) {
+      const menu = foodMenus.value[i];
+      const foundIndex = menu.foodMenu.findIndex(foodItem => foodItem.id === item.id);
+      if (foundIndex !== -1) {
+        originalCategoryIndex = i;
+        itemIndex = foundIndex;
+        break;
+      }
+    }
+
+    if (originalCategoryIndex === -1) {
+      console.error("Original item not found for editing");
+      return;
+    }
+
+    const originalCategory = foodMenus.value[originalCategoryIndex];
+
+    if (originalCategory.headingText.title !== newCategoryName) {
+      // Category has changed, so move the item
+      const itemToMove = originalCategory.foodMenu.splice(itemIndex, 1)[0];
+      Object.assign(itemToMove, item);
+
+      const newCategory = foodMenus.value[newCategoryIndex];
+      newCategory.foodMenu.push(itemToMove);
+
+      // Update both categories in the backend
+      await fetchData(`foodMenus/${originalCategory.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(originalCategory),
+      });
+
+      await fetchData(`foodMenus/${newCategory.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newCategory),
+      });
+
+    } else {
+      // Category is the same, just update the item
+      const categoryData = foodMenus.value[newCategoryIndex];
       categoryData.foodMenu[itemIndex] = {...item};
       await fetchData(`foodMenus/${categoryData.id}`, {
         method: 'PUT',
@@ -127,6 +172,7 @@ const saveMenuItem = async (item) => {
   } else {
     // Add new item
     const newItem = {...item, id: Date.now()}; // Assign a unique ID
+    const categoryData = foodMenus.value[newCategoryIndex];
     categoryData.foodMenu.push(newItem);
     await fetchData(`foodMenus/${categoryData.id}`, {
       method: 'PUT',
@@ -136,6 +182,7 @@ const saveMenuItem = async (item) => {
       body: JSON.stringify(categoryData),
     });
   }
+
   showForm.value = false;
   loadFoodMenus(); // Re-fetch data to update the UI
 };
@@ -173,23 +220,3 @@ const deleteMenuItem = async (itemId) => {
   }
 };
 </script>
-
-<style scoped>
-.add-new-item-button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.add-new-item-button:hover {
-  background-color: #218838;
-}
-</style>

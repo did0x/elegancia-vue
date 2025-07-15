@@ -8,36 +8,47 @@
         </button>
       </header>
       <section class="modal-body">
-        <form @submit.prevent="handleSubmit">
-          <div class="ak-form-field">
-            <label for="category">Category:</label>
-            <select id="category" v-model="form.category" class="ak-form-select" required>
-              <option value="">Select a category</option>
-              <option v-for="category in categories" :key="category" :value="category">{{ category }}</option>
-            </select>
-          </div>
-          <div class="ak-form-field">
-            <label for="title">Title:</label>
-            <input type="text" id="title" v-model="form.title" class="ak-form-input" required />
-          </div>
-          <div class="ak-form-field">
-            <label for="price">Price:</label>
-            <input type="text" id="price" v-model="form.price" class="ak-form-input" required />
-          </div>
-          <div class="ak-form-field">
-            <label for="image">Image URL:</label>
-            <input type="text" id="image" v-model="form.image" class="ak-form-input" />
-          </div>
-          <div class="ak-form-field">
-            <label for="subTitle">Subtitle:</label>
-            <input type="text" id="subTitle" v-model="form.subTitle" class="ak-form-input" />
-          </div>
-          <div class="ak-form-field">
-            <label for="priceSubTitle">Price Subtitle:</label>
-            <input type="text" id="priceSubTitle" v-model="form.priceSubTitle" class="ak-form-input" />
-          </div>
-          <button type="submit" class="ak-btn ak-btn-primary">{{ isEditing ? 'Update Item' : 'Add Item' }}</button>
-          <button type="button" @click="$emit('cancel')" class="ak-btn ak-btn-secondary">Cancel</button>
+        <form class="booking-system-form" @submit.prevent="handleSubmit">
+          <BaseSelect
+            id="category"
+            v-model="form.category"
+            :options="categoryOptions"
+            :required="true"
+          />
+          <BaseInput
+            id="title"
+            type="text"
+            v-model="form.title"
+            placeholder="Title"
+            :required="true"
+          />
+          <BaseInput
+            id="price"
+            type="text"
+            v-model="form.price"
+            placeholder="Price"
+            :required="true"
+          />
+          <BaseInput
+            id="image"
+            type="text"
+            v-model="form.image"
+            placeholder="Image URL"
+          />
+          <BaseInput
+            id="subTitle"
+            type="text"
+            v-model="form.subTitle"
+            placeholder="Subtitle"
+          />
+          <BaseInput
+            id="specialOffer"
+            type="text"
+            v-model="form.offer"
+            placeholder="Special Offer"
+          />
+          <Button type="submit" class="ak-btn style-5 color-yellow-bg">{{ isEditing ? 'Update Item' : 'Add Item' }}</Button>
+          <Button type="button" @click="$emit('cancel')" class="ak-btn style-5">Cancel</Button>
         </form>
       </section>
     </div>
@@ -45,7 +56,10 @@
 </template>
 
 <script setup>
-import { ref, watch, defineProps, defineEmits } from 'vue';
+import {ref, watch, computed, defineProps, defineEmits} from 'vue';
+import BaseInput from './BaseInput.vue';
+import BaseSelect from './BaseSelect.vue';
+import Button from './Button.vue';
 
 const props = defineProps({
   item: {
@@ -67,10 +81,17 @@ const form = ref({
   price: '',
   image: '',
   subTitle: '',
-  priceSubTitle: '',
+  offer: '',
 });
 
 const isEditing = ref(false);
+
+const categoryOptions = computed(() => {
+  return [
+    {value: '', text: 'Select a category'},
+    ...props.categories.map(category => ({value: category, text: category}))
+  ];
+});
 
 const resetForm = () => {
   form.value = {
@@ -80,34 +101,34 @@ const resetForm = () => {
     price: '',
     image: '',
     subTitle: '',
-    priceSubTitle: '',
+    offer: '',
   };
 };
 
 watch(
-  () => props.item,
-  (newItem) => {
-    if (newItem) {
-      form.value = {
-        id: newItem.id || null,
-        category: newItem.category || '',
-        title: newItem.title || '',
-        price: newItem.price || '',
-        image: newItem.image || '',
-        subTitle: newItem.subTitle || '',
-        priceSubTitle: newItem.priceSubTitle || '',
-      };
-      isEditing.value = true;
-    } else {
-      resetForm();
-      isEditing.value = false;
-    }
-  },
-  { immediate: true }
+    () => props.item,
+    (newItem) => {
+      if (newItem) {
+        form.value = {
+          id: newItem.id || null,
+          category: newItem.category || '',
+          title: newItem.title || '',
+          price: newItem.price || '',
+          image: newItem.image || '',
+          subTitle: newItem.subTitle || '',
+          offer: newItem.offer || '',
+        };
+        isEditing.value = true;
+      } else {
+        resetForm();
+        isEditing.value = false;
+      }
+    },
+    {immediate: true}
 );
 
 const handleSubmit = () => {
-  emit('save', { ...form.value });
+  emit('save', {...form.value});
   resetForm();
 };
 </script>
